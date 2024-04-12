@@ -1,0 +1,91 @@
+body {
+    color: aliceblue;
+    font-family: Arial, sans-serif; /* Adding a fallback font family */
+}
+
+.choice-container {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    border-radius: 2px;
+    width: calc(100% - 2rem); /* Adjusting width to fit the screen */
+    max-width: 80rem;
+    background: rgb(18, 93, 255);
+    font-size: 5rem; /* Adjusting font size for mobile */
+    padding: 2rem; /* Adding padding for better spacing */
+    text-align: center;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    transform: scale(1.02);
+    transition: transform 100ms; 
+}
+
+.choice-prefix {
+    color: white;
+}
+
+.choice-text {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem; /* Adjust the font size for better readability on mobile */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.correct {
+    background: linear-gradient(32deg, rgb(5, 170, 5) 0%, rgb(5, 170, 5) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgba(224, 11, 11, 1) 100%);
+}
+
+/* Heads up Display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(0, 255, 0);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(0, 255, 0);
+    width: 0%;
+}
+#question {
+    text-align: center; /* Center-align the text */
+    font-size: 2rem; /* Adjust the font size for better readability on mobile */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        width: calc(100% - 2rem); /* Adjusting width for smaller screens */
+        max-width: 100%; /* Ensure container doesn't exceed screen width */
+        font-size: 2rem; /* Adjusting font size for smaller screens */
+    }
+    #question {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+}
+
+
