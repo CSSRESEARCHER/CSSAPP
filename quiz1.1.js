@@ -195,7 +195,6 @@ getNewQuestion = () => {
 }
 
 
-
 /* FAST CLICK*/
 
 const choiceContainers = document.querySelectorAll('.choice-container');
