@@ -3,74 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit of Competency 1</title>
+    <title>Unit of Competency 2</title>
     <link rel="stylesheet" href="lesson.css">
 </head>
 <body>
     <body background="Background.JPG">
-        <div class="centered-header"></div>
-         <header class="header" id="header">
-            <h3>CSS LESSON: Unit of Competency 1 </h3>
-            <a href="lesson.html" class="back-backbutton2"><span>Back</a>
-            <a href="#" class="back-button"></a>
-         </header>
-        <main>
-            <h1>Unit of Competency1: Install and Configure Computer System</h1>
-            <div class="container">
+            <div class="centered-header"></div>
+             <header class="header" id="header">
+             <h3>CSS LESSON: Unit of Competency 2 </h3>
+            <a href="lesson.html" class="back-button2"><span>Back</a>
+            <a href="#" class="back-button">&#8679;</a>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button onclick="search()" class="search-button">Search</button>
+            </div>
+            </header>
+    <main>
+            <h1>Unit of Competency 2: Setup Computer Network </h1>
+            <div class="container"> 
                 <div class="navigation">
-                    <h3><a href="#learning-outcome-1">Learning Outcome No. 1: Assemble Computer Hardware</a></h3>
-                    <h3><a href="#learning-outcome-2">Learning Outcome No. 2: Prepare installer </a></h3>
-                    <h3><a href="#learning-outcome-3">Learning Outcome No. 3: Install operating system and drivers for peripherals/ devices  </a></h3>
-                    <h3><a href="#learning-outcome-4">Learning Outcome No. 4: Install application software </a></h3>
+                    <h3><a href="#learning-outcome-1">Learning Outcome No.1: Install Network Cables </a></h3>
+                    <h3><a href="#learning-outcome-2">Learning Outcome No.2: Set Network Configuration </a></h3>
+                    <h3><a href="#learning-outcome-3">Learning Outcome No.3: Set router/Wi-Fi/ wireless access point/repeater configuration </a></h3>
+                    <h3><a href="#learning-outcome-4">Learning Outcome No.4: Inspect and test the configured computer networks </a></h3>
                 </div>
             </div>
+
+    <div class="lesson-content"> 
+        <div class="container">
+            <div id="learning-outcome-1" class="content">
+                </div> 
+                    <h2>Learning Outcome No.1: Install Network Cables</h2>
+                    <p>INFORMATION SHEET 1.1-1</p>
+                        <p>A network is a group of interconnected computers, linked for the purpose of sharing files, programs, and peripherals. Through your computers or office network, you can run programs, use printers, and edit files from other computers as if they were located on your own.  </p>
+                        <p>A server is the computer on the network that manages the network resources, such as the shared files, programs, and printers.</p>
+                        <p>Local-area network (LAN) is a computer network covering a small geographic area, like a home, office, or group of buildings e.g. a school.</p>
+                        <p>The majority of networking, particularly at the corporate level, is done using the internet standard. At the center of the basic diagram of a wired network is either a hub or a switcher and computers are connected to the hub, much like spokes of a wheel or star. Each connection at the hub is called a port.</p>
+                <p><strong>Three Basic Network Categories:</strong></p>
+                     <ul>
+                    <li><strong>Local Area Network (LAN):</strong> the smallest of the three network types, consists of PCs connected together within a limited area, such as within the same building, floor, or department.</li>
+                    <li><strong>Metropolitan Area Network (MAN):</strong> a network that spans no more than 50 miles, designed to connect LANs spanning a town or city.</li>
+                    <li><strong>Wide Area Network (WAN):</strong> used to distribute information thousands of miles among thousands of users.</li>
+                    </ul>
+            
+                <p><strong>The Basic Rule:</strong></p>
+                    <p>The basic rule for network design is known as the 5-4-3 rule. It states that in a 10 Mbps Ethernet network:</p>
+                    <ul>
+                    <li>you can have a maximum of five cable segments between any two computers</li>
+                    <li>you can have a maximum of four repeaters (hubs, switches, wireless access points, etc.) between any two computers</li>
+                    <li>of the five cable segments (maximum) between any computers, only three of these can terminate in computers.</li>
+                    </ul>
+                
+                <p><strong>How to Wire Ethernet Cables:</strong></p>
+                    <p><strong>What You Need:</strong></p>
+                    <p>Required:</p>
+                    <ul>
+                    <li>CAT 5 Cable - bulk Category 5, 5e or 6 cable</li>
+                    <li>RJ45</li>
+                    <li>Crimper for RJ45</li>
+                    <li>Wire Cutters - to cut and strip the cable if necessary</li>
+                    </ul>
+                <p>Recommended:</p>
+                <ul>
+                  <li>Wire Stripper</li>
+                  <li>Cable Tester</li>
+                </ul>
+                <p><strong>About the Cable:</strong></p>
+            
+                <p><strong>Internal Cable Structure and Color Coding:</strong></p>
+                <p>Inside the cable, there are 8 color coded wires. These wires are twisted into 4 pairs of wires, each pair has a common color theme. One wire in the pair being a solid or primarily solid colored wire and the other being a primarily white wire with a colored stripe (Sometimes cable doesn't have any color on the striped cable, the only way to tell is to check which other wire it is twisted around).</p>
+            
+                <p><strong>About the RJ45 Ends:</strong></p>
+                <p>The RJ45 end is a 8-position modular connector that looks like a large phone plug. There are a couple variations available. Here is a diagram and pinout:</p>
+            
+                <p><strong>RJ45 Jack and Plug Pinout</strong></p>
+            
+                <p><strong>Ethernet Cable Pinouts:</strong></p>
+                <p>There are two basic cables. A straight through cable, which is used to connect to a hub or switch, and a crossover cable used to operate in a peer-to-peer fashion without a hub/switch. Some interfaces can cross and un-cross a cable automatically as needed, really quite nice.</p>
+                <p> <strong>Straight-Through Cable Pinout for T568A </strong> </p>
+            
+                <img src="" alt="T568A" class="centered-image">
+            
+                <p><strong>Straight-Through Cable Pinout for T568B </strong></p>
+            
+                <img src="" alt="T568A" class="centered-image">
+            
+                <p><strong> Cross Over Cable (T568B) </strong></p>
+            
+                <img src="" alt="Cross Cable" class="centered-image">
+            
+                <h5>Steps in Making a Straight-Through Cable</h5>
+            
+                <img src="" alt="Cable Steps" class="centered-image">
+            
+            <h4><strong> IDENTIFYING NETWORK MATERIALS </strong></h4>
+                <p><strong>What Twisted Pair Is Like and Its Cabling Standards</strong></p>
+                <p>Twisted pair cabling is a type of wiring in which two conductors (usually copper) of a single circuit are twisted together. Why are the pairs twisted together? Because the two wires are carrying equal and opposite signals, one pair can induce crosstalk in another and the effect gets stronger along the length of the cable, which is bad for the transmission of signal. Twisting the pairs reduce the crosstalk between lines. Twisted pair cabling is often used in data networks for short and medium length connections because of its relatively lower costs compared to optical fiber and coaxial cable</p>
+            
+                <p><strong>Shielded Twisted Pair vs. Unshielded Twisted Pair</strong></p>
+                <p>Twisted pair cables are often shielded in an attempt to prevent electromagnetic interference. Twisted pair with shielding are known as shielded twisted pair (STP). In contrast to STP, unshielded twisted pair (UTP) is not surrounded by any shielding.</p>
+                <p>STP cable is also divided by overall shield and individual shield. Individual shielded twisted pair is with aluminum foil for each twisted pair or quad. This type of shielding protects cable from external electromagnetic interference (EMI) entering or exiting the cable and also protects neighboring pairs from crosstalk. Overall shielded twisted pair is with overall foil or braided shield across all of the pairs within the 100 Ω twisted pair cable. This type of shielding helps prevent EMI from entering or exiting the cable. One STP cable can have both overall and individual shielding.</p>
+                
+                <img src="" alt="shielded twisted pair" class="centered-image">
+               
+                <p>UTP cable without shielding is more prone to outside interference. For this reason, this cable type is more often found in indoor telephone applications. Outdoor telephone cables contain hundreds or thousands pairs. Pairs that have the same twisted rate within the cable can experience some degree of crosstalk, so wire pairs are usually selected carefully within a large cable to reduce the crosstalk.</p>
+            
+                <p>Most UTP cable uses RJ45 connectors, which look like telephone connectors (RJ11) but have eight wires instead of four.</p>
+                <img src="" alt="RJ45" class="centered-image">
+                
+                <p><strong> Twisted Pair Ethernet Cables</strong></p>
+                <img src="" alt="tp cable types" class="centered-image">
+            
+                <p><strong> Twisted Pair Cabling: T568A or T568B? </strong></p>
+                <p>Two wiring standards are commonly used with twisted pair cabling: T568A and T568B. These are telecommunications standards from TIA and EIA that specify the pin arrangements for the connectors (often RJ45) on UTP or STP cables. The number 568 refers to the order in which the wires within the twisted pair cable are terminated and attached to the connector. The signal is identical for both.</p>
+            
+                <p><strong>Coaxial Cable: Not Just a Video Cable </strong></p>
+                <p>Coaxial cable is a type of cable that has an inner conductor surrounded by a tubular insulating layer, surrounded by a tubular conducting shield. The inner conductor and the outer shield share a geometric axis. Many coaxial cable has an insulating outer sheath or jacket.</p>
+                <img src="" alt="Coxial Cable" class="centered-image">
+                
+                <p><strong>Widely Used Coaxial Connector Types </strong></p>
+                <p>Many coaxial connector types are available in the audio, digital, video, RF and microwave industries, each designed for a specific purpose and application. One consideration the number of connect-disconnect cycles that a connector pair could withstand while still performing as expected. Here are some common coaxial connector types.</p>        
+                coaxial connector
+              
+                <p><strong>The Capable Optical Fiber Cable</strong></p>
+                <p>Optical fiber cabling is an excellent transmission medium for its high data capacity and supported long distances. It is indispensable in any fiber optic network. It has a fiber/glass core within a rubber outer coating and uses beams of light rather than electrical signals to relay data. Because light doesn't diminish over distance the way electrical signals do, this cabling can run for distances measured in kilometers with transmission speeds from 10 Mbps up to 100 Gbps or higher.</p>
+                <img src="" alt="Coaxial Cable" class="centered-image">
+                
+                <p><strong>The Fiber Core Size Matters: SMF and MMF </strong></p>
+                <p>Optical fiber cabling is an excellent transmission medium for its high data capacity and supported long distances. It is indispensable in any fiber optic network. It has a fiber/glass core within a rubber outer coating and uses beams of light rather than electrical signals to relay data. Because light doesn't diminish over distance the way electrical signals do, this cabling can run for distances measured in kilometers with transmission speeds from 10 Mbps up to 100 Gbps or higher.</p>
+                <img src="" alt="fiber optic" class="centered-image">
+                <p><strong>Multiple Fiber Optic Connectors</strong></p>
+                <p>Optical fiber cables can be terminated with various types of fiber optic connectors that can be plugged into different ports of devices. The figure below shows some common fiber optic connector types, and the LC, SC and ST are most used three types.</p>        
+                <img src="" alt="fiber connectors" class="centered-image">
+
+
+                </div>
+
+        <div class="container">
+            <div id="learning-outcome-2" class="content"> </div>
+                <h2>Learning Outcome No.2: Set Network Configuration</h2>
+
+
+                </div>
+
+        <div class="container">
+            <div id="learning-outcome-3" class="content"> </div>
+                <h2>Learning Outcome No.3: Set router/Wi-Fi/ wireless access point/repeater configuration </h2>
         
-            <div class="lesson-content">
-                <div id="learning-outcome-1" class="content">
-                    <h2>Learning Outcome No. 1: Assemble Computer Hardware</h2>
-
-
-
-
-                </div>
-
-
-
         
-                <div id="learning-outcome-2" class="content">
-                    <h2>Learning Outcome No. 2: Assemble Computer Hardware</h2>
-                 </div>
-                             
-                 
-
-
-
-
-
-
-
-                <div id="learning-outcome-3" class="content">
-                    <h2>Learning Outcome No. 3: Assemble Computer Hardware</h2>
                 </div>
 
-                      
+        <div class="container">
+            <div id="learning-outcome-4" class="content"> </div>
+                <h2>Learning Outcome No.4: Inspect and test the configured computer networks </h2>
+        
+        
+                </div>    
+
+    
 
 
+         
+    </main>       
+      
 
+ 
 
-                <div id="learning-outcome-4" class="content">
-                    <h2>Learning Outcome No. 4: Assemble Computer Hardware</h2>
-
-                </div>
-
-
-
-
-
-            </div>
-
-        </main>
-    </body>
 
     <script>
         let lastScrollTop = 0; // Initialize variable to store last scroll position
@@ -78,7 +176,7 @@
 window.addEventListener("scroll", function() { // Listen for scroll events
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
     if (currentScroll > lastScrollTop) { // If scrolled down
-        document.querySelector("header").style.top = "-50px"; // Hide the header by moving it up
+        document.querySelector("header").style.top = "-90px"; // Hide the header by moving it up
     } else { // If scrolled up
         document.querySelector("header").style.top = "0"; // Show the header by moving it back to its original position
     }

@@ -12,9 +12,13 @@
          <header class="header" id="header">
             <h3>CSS LESSON: Unit of Competency 1 </h3>
             <a href="lesson.html" class="back-button2"><span>Back</a>
-            <a href="#" class="back-button"></a>
+            <a href="#" class="back-button">&#8679;</a>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button onclick="search()" class="search-button">Search</button>
+            </div>
          </header>
-        <main>
+    <main>
             <h1>Unit of Competency1: Install and Configure Computer System</h1>
             <div class="container">
                 <div class="navigation">
@@ -24,10 +28,10 @@
                     <h3><a href="#learning-outcome-4">Learning Outcome No. 4: Install application software </a></h3>
                 </div>
             </div>
-        
-            <div class="lesson-content">
-                <div class="container">
+    <div class="lesson-content">
+        <div class="container">
                 <div id="learning-outcome-1" class="content">
+                    </div>
                     <h2>Learning Outcome No. 1: Assemble Computer Hardware</h2>
                         <p>Information Sheet 1.1-1</p>  
                             <p><strong>OCCUPATIONAL HEALTH AND SAFETY (OHS) </strong></p>
@@ -196,13 +200,28 @@
 
 
 
-                                    </div>  
+                            </div>  
 
                 </div>
-
-                <div id="learning-outcome-2" class="content">
-                    <h2>Learning Outcome No. 2: Prepare installer</h2>
-                 </div>
+        <div class="container">
+            <div id="learning-outcome-2" class="content"> </div>
+                <h2>Learning Outcome No. 2: Prepare installer</h2>
+                    
+        
+        
+                    </div>
+        <div class="container">
+            <div id="learning-outcome-3" class="content"> </div>
+                <h2>Learning Outcome No. 3: Install operating system and drivers for peripherals/ devices</h2>
+                        
+                        
+                    </div>
+        <div class="container">
+            <div id="learning-outcome-4" class="content"> </div>
+                <h2>Learning Outcome No. 4: Install application software</h2>
+                    
+                    
+                    </div>
                 
                  
 
@@ -212,27 +231,8 @@
 
 
 
-                <div id="learning-outcome-3" class="content">
-                    <h2>Learning Outcome No. 3: Install operating system and drivers for peripherals/ devices</h2>
-                </div>
-
-                      
-
-
-
-
-                <div id="learning-outcome-4" class="content">
-                    <h2>Learning Outcome No. 4: Install application software</h2>
-
-                </div>
-
-
-
-
-
-            </div>
-
         </main>
+    </div>
     </body>
 
     <script>
@@ -241,7 +241,7 @@
 window.addEventListener("scroll", function() { // Listen for scroll events
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
     if (currentScroll > lastScrollTop) { // If scrolled down
-        document.querySelector("header").style.top = "-50px"; // Hide the header by moving it up
+        document.querySelector("header").style.top = "-90px"; // Hide the header by moving it up
     } else { // If scrolled up
         document.querySelector("header").style.top = "0"; // Show the header by moving it back to its original position
     }
