@@ -6,14 +6,6 @@ body {
     background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
 }
 
-header {
-    background: linear-gradient(to right, #393c3d, #2f3531); 
-    background-color: #333; /* Example background color for header */
-    color: white;
-    text-align: center;
-    position: fixed;
-}
-
 .main {
     padding: 5px;
 }
@@ -241,16 +233,14 @@ ol {
     color: #fff;
     transition: top 0.3s;
     top: 0;
-
-
 }
   
-  header {
+header {
     background: linear-gradient(to right, #393c3d, #2f3531); 
     background-color: #333; /* Example background color for header */
     color: white;
     text-align: center;
-    position: fixed;
+    
 }
 .container {
     background-color: #fff; /* Set background color */
