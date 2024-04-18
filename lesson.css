@@ -61,6 +61,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -233,6 +234,7 @@ ol {
     color: #fff;
     transition: top 0.3s;
     top: 0;
+    overflow: hidden;
 }
   
 header {
@@ -334,5 +336,16 @@ h5{
 .container-img p {
     margin-left: 20px;
 }
+.video-container{
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    top: 0;
+    align-content: center;
+}
 
-
+.side-img {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some margin to the right of the image */
+    width: 100px;
+}
