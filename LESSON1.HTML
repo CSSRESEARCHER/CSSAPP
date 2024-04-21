@@ -16,6 +16,8 @@
             <div class="search-container">
                 <input type="text" id="search-bar" placeholder="Search...">
                 <button onclick="search()" class="search-button">Search</button>
+                <button id="prev-button" onclick="navigate('prev')" style="display: none;">Previous</button>
+                <button id="next-button" onclick="navigate('next')" style="display: none;">Next</button>
             </div>
          </header>
     <main>
@@ -28,7 +30,7 @@
                     <h3><a href="#learning-outcome-4">Learning Outcome No. 4: Install application software </a></h3>
                 </div>
             </div>
-<div class="lesson-content">
+<div id="lesson-content" class="lesson-content">
     <div class="container">
         <div id="learning-outcome-1" class="content">
             </div>
@@ -87,6 +89,7 @@
                                 <p>Personal protective equipment (PPE) refers to protective clothing, helmets, goggles, or other garment designed to protect the wearer's body from injury by blunt impacts, electrical hazards, heat, chemicals, and infection, for job-related occupational safety and health purposes, and in sports, martial arts, combat, etc.</p>
                                 <p>To protect anyone from danger by working any electrical activities, protective equipment such as safety shoes, goggles, hard hats, and gloves are issued. The use of this equipment is mandatory on certain activity. Their use is a MUST, and there is no question about that. Be sure to USE THEM on any designated activity WHERE they are REQUIRED. They can protect you from a lot of harm.</p>
                                 <p><strong>Importance of Personal Protective Equipment</strong></p>
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsafetyculture.com%2Ftopics%2Fppe-safety%2F&psig=AOvVaw3VlGrvUn1vPxEXEvFfiyt1&ust=1713767005229000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLjH1t_V0oUDFQAAAAAdAAAAABAK" alt="PCI-Express" class="centered-image">
                                 <ul>
                                     <li>The type of personal protective equipment (PPE) needed when using hand tools depends on the nature of the task. At a minimum, eye protection should always be worn.</li>
                                     <li>The use of hand protection may also be appropriate to provide protection against cuts, abrasion, and repeated impact.</li>
@@ -95,9 +98,9 @@
                                 <p><strong>Categories of Personal Protective Equipment</strong></p>
                                 <p><strong>Eye and Face Protection</strong> This will be used to avoid being exposed to a large number of hazards that pose danger to their eyes and face. Then to ensure that workers have appropriate eye or face protection if they are exposed to eye or face hazards from flying particles, molten metal, liquid chemicals, acids or caustic liquids, chemical gases or vapors, potentially infected material or potentially harmful light radiation.</p>
                                 <ul>
-                                    <img src="" alt="" class="side-img"><li>Safety spectacles. These protective eyeglasses have safety frames constructed of metal or plastic and impact-resistant lenses. Side shields are available on some models.</li>
-                                    <img src="" alt="" class="side-img"><li>Goggles. These are tight-fitting eye protection that completely cover the eyes, eye sockets and the facial area immediately surrounding the eyes and provide protection from impact, dust and splashes. Some goggles will fit over corrective lenses.</li>
-                                    <img src="" alt="" class="side-img"><li>Face shields. These shields protect against nuisance dusts and potential splashes or sprays of hazardous liquids but will not provide adequate protection against impact hazards. Face shields used in combination with goggles or safety spectacles will provide additional protection against impact hazards.</li>
+                                    <li>Safety spectacles. These protective eyeglasses have safety frames constructed of metal or plastic and impact-resistant lenses. Side shields are available on some models.</li>
+                                    <li>Goggles. These are tight-fitting eye protection that completely cover the eyes, eye sockets and the facial area immediately surrounding the eyes and provide protection from impact, dust and splashes. Some goggles will fit over corrective lenses.</li>
+                                    <li>Face shields. These shields protect against nuisance dusts and potential splashes or sprays of hazardous liquids but will not provide adequate protection against impact hazards. Face shields used in combination with goggles or safety spectacles will provide additional protection against impact hazards.</li>
                                 </ul>
                                 <p><strong>Foot and Leg Protection</strong> Used for possible foot or leg injuries from the Moist floors, Non-grounded Power Extension cables and Power Surge that you might get a serious injuries.</p>
                                 <ul>
@@ -217,8 +220,9 @@
                                     <div class="container-img">
                                     <img src="https://i.imgur.com/eMXQPLB.jpg" alt="motherboard" class="centered-image">
                                     </div>
-                                    <li>
-                                    <p><strong>Central Processing Unit</strong></p>
+                                    <li> 
+                                    <p><strong>Central Processing Unit</strong> </p>
+                                        <img src="https://i.imgur.com/tYN8Vxk.jpeg" alt="cpu" class="centered-image">
                                         <p>The central processing unit (CPU), sometimes called the processor, is considered the computer's brain. Most calculations take place in the CPU, making it the most important element of a computer system. CPUs come in different form factors, each requiring a particular slot or socket on the motherboard. Common CPU manufacturers include Intel and AMD.</p>
                                         <p>The CPU socket or slot serves as the interface between the motherboard and the processor. Most CPU sockets and processors in use today are built around the pin grid array (PGA) architecture. Slot-based processors are cartridge-shaped and fit into a slot similar to an expansion slot.</p>
                                         <p>Some CPUs incorporate hyper-threading to enhance performance. With hyper-threading, the CPU has multiple pieces of code being executed simultaneously on each pipeline, appearing to the operating system as two CPUs.</p>
@@ -239,13 +243,15 @@
                                     </li>  
                                      <li>
                                         <p><strong>ROM and RAM</strong> – ROM and RAM provide memory for a vast amount of computer equipment. They come in different memory sizes and module sizes and have different features. </p>
+                                                <img src="https://i.imgur.com/5KyJAiK.jpg" alt="RAM" class="centered-image">
                                                <ul>
                                                 <p><b>ROM (Read only Memory) </b> - chips are located on the motherboard. ROM chips contain instructions that the CPU can access directly. 
                                                     ROM stores basic instructions for booting the computer and loading the operating system. ROM chips retain their contents even when the computer is powered down. The contents cannot be erased, changed, 
                                                     </p>
                                                 <p><b>RAM (Random Access Memory) </b> - is the temporary storage for data and programs that are being accessed by the CPU. RAM is volatile memory, which means that the contents are erased when the computer is powered off. The more RAM in a computer, the more capacity the computer has to hold and process large programs and files, as well as enhance system performance. </p>
                                                </ul>
-                                               <p><strong>The different types of memory modules </strong></p>
+                                               <p><strong>The different types of memory modules </strong> </p>
+                                                    <img src="https://i.imgur.com/oQaz8HV.png" alt="modules" class="centered-image">
                                                    <p><b>Dual Inline Package (DIP) </b>	Dual Inline Package (DIP) </p>
                                                    <p><b>Single Inline Memory Module (SIMM)</b>is a small circuit board that holds several memory chips. SIMMs has 30-pin and 72-pin configurations. </p>
                                                     <p><b>Dual Inline Memory Module (DIMM)</b>is a circuit board that holds SDRAM, DDR SDRAM, and DDR2 SDRAM chips. There are 168-pin SDRAM DIMMs, 184-pin DDR DIMMs, and 240-pin DDR2 DIMMs.  </p>
@@ -254,7 +260,9 @@
                                      </li>
                                      <li>
                                         <p><strong>Adapter Cards</strong> - Adapter cards are used to expand and customize the computer's capability.</p>
+                                        <img src="https://northernmicro.com/spirit-manuals/spirit-q270-as-sff-user-manual/Graphics/Lifting_card_holder.JPG" alt="" class="centered-image">
                                         <ul>
+                                            
                                             <li>NIC connects a computer to a network using a network cable.</li>
                                             <li>Wireless NIC connects a computer to a network using radio frequencies.</li>
                                             <li>Sound adapter provides audio capability.</li>
@@ -289,6 +297,7 @@
                              <img src="https://i.imgur.com/jeznE7a.jpeg" alt="dissassembly" class="centered-image">
                              <img src="https://i.imgur.com/D9F1hK1.jpeg" alt="dissassembly" class="centered-image">
                              <img src="https://i.imgur.com/b6ZyLvv.jpeg" alt="dissassembly" class="centered-image">
+                             <img src="https://i.imgur.com/5Be4iv2.jpg" alt="dissassembly" class="centered-image">
                              <img src="https://i.imgur.com/iqlguZq.jpeg" alt="dissassembly" class="centered-image">
                              <img src="https://i.imgur.com/qi6wh3o.jpeg" alt="dissassembly" class="centered-image">
                              <img src="https://i.imgur.com/yGHbwmj.jpeg" alt="dissassembly" class="centered-image">
@@ -394,7 +403,11 @@
                             <li><p> USB flash drive (at least 4GB) </p></li>
                             <li><p> Desktop computer</p></li>
                             </ul>
-                        <img src="" alt="rufus" class="centered-image">
+                        <img src="https://i.imgur.com/pgW12wx.jpeg" alt="rufus" class="centered-image">
+                        <img src="https://i.imgur.com/7LPPX1w.jpeg" alt="rufus" class="centered-image">
+                        <img src="https://i.imgur.com/AhxHDQJ.jpeg" alt="rufus" class="centered-image">
+                        <img src="https://i.imgur.com/MWwsH72.jpeg" alt="rufus" class="centered-image">
+                        <img src="https://i.imgur.com/OfJnli1.jpeg" alt="rufus" class="centered-image">
         <div id="learning-outcome-3" class="content"> </div>
             <h2>Learning Outcome No. 3: Install operating system and drivers for peripherals/ devices</h2>
                 <p>Information Sheet 1.3-1 </p>
@@ -469,10 +482,6 @@
                     <img src="https://i.imgur.com/7SEWkd2.jpg" alt="Os Steps" class="centered-image">
                     
                     
-
-
-
-
                         <p><b>Installing Device Drivers </b></p>
                             <p><strong>Device driver</strong></p>
                             <p>More commonly known as a driver, a device driver or hardware driver is a group of files that enable one or more hardware devices to communicate with the computer's operating system.</p>
@@ -519,14 +528,6 @@
             
             </div>
         
-         
-
-
-
-
-
-
-
         </main>
     
 </body>
@@ -534,20 +535,7 @@
 
 
 
-<script>
-    let lastScrollTop = 0; // Initialize variable to store last scroll position
-
-window.addEventListener("scroll", function() { // Listen for scroll events
-let currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
-if (currentScroll > lastScrollTop) { // If scrolled down
-    document.querySelector("header").style.top = "-90px"; // Hide the header by moving it up
-} else { // If scrolled up
-    document.querySelector("header").style.top = "0"; // Show the header by moving it back to its original position
-}
-lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Update last scroll position
-}, false);
-
-</script>
+        <script src="lesson.js"></script>
 
 
 </html>

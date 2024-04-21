@@ -10,157 +10,205 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
-/*CHANGE THE QUESTION UC 1*/
+/*CHANGE THE QUESTION UC 2*/
 let questions = [
-        {
-            question: 'What is a LAN?',
-            choice1: 'A network spanning multiple geographic areas',
-            choice2: 'A network connecting computer in close proximity',
-            choice3: 'A network used exclusively by business',
-            choice4: 'A network exclusively for mainframes',
-            answer: 2
-        },
-        {
-            question: 'What is firmware?',
-            choice1: 'Software installed on servers',
-            choice2: 'Hardware integrated with software',
-            choice3: 'Software for network security',
-            choice4: 'Operating system software',
-            answer: 2
-        },
-        {
-            question: 'What is the main function of a network interface card (NIC)?',
-            choice1: 'Control network traffic',
-            choice2: 'Connect to the internet wirelessly',
-            choice3: 'Connect a computer to a network',
-            choice4: 'Monitor network bandwidth',
-            answer: 3
-        },
-        {
-            question: 'What is bandwidth?',
-            choice1: 'Measurement of network size',
-            choice2: 'Total maximum transfer rate of a network cable or device',
-            choice3: 'Number of computer in a network',
-            choice4: 'Type of network security protocol',
-            answer: 2
-        },
-        {
-            question: 'What does WAN stand for?',
-            choice1: 'Wide Access Network',
-            choice2: 'Wide Area Network',
-            choice3: 'Wireless Area Network',
-            choice4: 'Wired Access Network',
-            answer: 2
-        },
-        {
-            question: 'Which network is commonly used in school campuses and large companies with multiple buildings?',
-            choice1: 'LAN',
-            choice2: 'WAN',
-            choice3: 'MAN',
-            choice4: 'VPN',
-            answer: 3
-        },
-        {
-            question: 'What is broadcast information?',
-            choice1: 'Information sent to a single receiver',
-            choice2: 'Information sent to many receiver',
-            choice3: 'Information sent via telephone lines',
-            choice4: 'Information stored on a server',
-            answer: 2
-        },
-        {
-            question: 'What is broadband?',
-            choice1: 'Slow internet connection',
-            choice2: 'Fast internet connection',
-            choice3: 'Type of network cable',
-            choice4: 'Network security protocol',
-            answer: 2
-        },
-        {
-            question: 'What is the maximum length of a Cat 5 LAN cable?',
-            choice1: '50 meters',
-            choice2: '100 meters',
-            choice3: '200 meters',
-            choice4: '500 meters',
-            answer: 2
-        },
-        {
-            question: 'What is a client computer?',
-            choice1: 'A computer used for server',
-            choice2: 'A computer connected to a remote server',
-            choice3: 'A computer used exclusively for network management',
-            choice4: 'A computer used for server side processing',
-            answer: 2
-        },
-        {
-            question: 'What is the purpose of crimping tool?',
-            choice1: 'To cut metal wires',
-            choice2: 'To join two pieces of metal by deforming them',
-            choice3: 'To bend metal into shapes',
-            choice4: 'To solder metal components',
-            answer: 2
-        },
-        {
-            question: 'What is the primary material used in fiber optic cable?',
-            choice1: 'Copper',
-            choice2: 'Plastic',
-            choice3: 'Glass',
-            choice4: 'Aluminum',
-            answer: 3
-        },
-        {
-            question: 'What does gateway serve as in a network?',
-            choice1: 'A central computer',
-            choice2: 'An entry point another network',
-            choice3: 'A dedicated server',
-            choice4: 'A storage device',
-            answer: 2
-        },
-        {
-            question: 'Which network type does not have a central computer or dedicated server?',
-            choice1: 'LAN',
-            choice2: 'WAN',
-            choice3: 'P2P',
-            choice4: 'VPN',
-            answer: 3
-        },
-        {
-            question: 'Who coined the term “packet” to describe a segment of data sent over a network?',
-            choice1: 'Tim Bervers Lee',
-            choice2: 'Uint Cerf',
-            choice3: 'Donald Davies',
-            choice4: 'Bod Kahn',
-            answer: 3
-        },
-        {
-            question: 'What is the purpose of the WAN- ADD/Edit page?',
-            choice1: 'To view WAN settings',
-            choice2: 'To configure WAN settings',
-            choice3: 'To delete WAN settings',
-            choice4: 'To troubleshoot WAN connections',
-            answer: 2
-        },
-        {
-            question: 'Which network addressing modes are supported by the security appliance for IPV4?',
-            choice1: 'DHCP client, Static IP, PPPoE, PPTP, and L2TP',
-            choice2: 'DHCP server, Dynamic IP, PPPoE, IPsec and GRE',
-            choice3: 'Static IP, DNS server, NAT, VPN, and VLAN',
-            choice4: 'DHCP client, Dynamic IP, PPPoE, IPsec and GRE',
-            answer: 1
-        },
-        {
-            question: 'What does SLAAC stand for IPV6 Configuration?',
-            choice1: 'State Less Address Auto Configuration',
-            choice2: 'Secure Local Area Address Configuration',
-            choice3: 'State Less IPv6 Auto-Assigned Configuration',
-            choice4: 'Static Local Area Address Configuration',
-            answer: 1
-        },   
+    {
+        question: 'A group of interconnected computers called?',
+        choice1: 'Network',
+        choice2: 'Server',
+        choice3: 'Workgroup',
+        choice4: 'Sharing',
+        answer: 1
+    },
+    {
+        question: 'The smallest type of network',
+        choice1: 'Local Area Network',
+        choice2: 'Metropolitan Area Network',
+        choice3: 'Wide Area Network',
+        choice4: 'All of the above',
+        answer: 1
+    },
+    {
+        question: 'A powerful computer whose sole purpose is to serve network clients',
+        choice1: 'Host',
+        choice2: 'Peers',
+        choice3: 'Network Server',
+        choice4: 'Workstation',
+        answer: 3
+    },
+    {
+        question: 'What are the criteria a network must meet?',
+        choice1: 'Reliability, Scalability, Security',
+        choice2: 'Performance, Availability, Affordability',
+        choice3: 'Performance, Reliability, Scalability',
+        choice4: 'Efficiency, Timeliness, Accuracy',
+        answer: 3
+    },
+    {
+        question: 'What is the primary function of a transmitter in data communication?',
+        choice1: 'To receive incoming data',
+        choice2: 'To convert data into electromagnetic signals',
+        choice3: 'To manage the destination device',
+        choice4: 'To encode data into binary format',
+        answer: 2
+    },
+    {
+        question: 'Which model is commonly used for doing business with consumers over the Internet?',
+        choice1: 'Client-Server model',
+        choice2: 'Point-to-Point Connection model',
+        choice3: 'Multipoint Connection model',
+        choice4: 'e-commerce model',
+        answer: 4
+    },
+    {
+        question: 'Which network topology forms a ring, where each computer is connected to another computer, with the last one connected to the first?',
+        choice1: 'Bus Topology',
+        choice2: 'Ring Topology',
+        choice3: 'Star Topology',
+        choice4: 'Mesh Topology',
+        answer: 2
+    },
+    {
+        question: 'What type of topology is a mixture of two or more different types of topologies?',
+        choice1: 'Mesh Topology',
+        choice2: 'Tree Topology',
+        choice3: 'Hybrid Topology',
+        choice4: 'Star Topology',
+        answer: 3
+    },
+    {
+        question: 'What is the primary purpose of twisting the conductors in twisted pair cabling?',
+        choice1: 'To increase electromagnetic interference',
+        choice2: 'To decrease crosstalk between lines',
+        choice3: 'To decrease signal transmission speed',
+        choice4: 'To increase signal distortion',
+        answer: 2
+    },
+    {
+        question: 'What is the difference between shielded twisted pair (STP) and unshielded twisted pair (UTP) cables?',
+        choice1: 'STP cables have no shielding, while UTP cables have overall foil shielding',
+        choice2: 'STP cables are surrounded by shielding to prevent electromagnetic interference, while UTP cables are not',
+        choice3: 'STP cables are typically used for indoor telephone applications, while UTP cables are used for outdoor telephone applications',
+        choice4: 'STP cables use RJ45 connectors, while UTP cables use RJ11 connectors',
+        answer: 2
+    },
+    {
+        question: 'What is the primary function of a patch panel in a network configuration?',
+        choice1: 'To deliver data communication to various electronic systems',
+        choice2: 'To provide a dedicated, full-time connection to a network',
+        choice3: 'To connect and route circuits for monitoring, interconnecting, and testing',
+        choice4: 'To implement physical layer circuitry necessary for communicating with a data link layer standard',
+        answer: 3
+    },
+    {
+        question: 'Which type of NIC provides network connections through a device plugged into the USB port?',
+        choice1: 'Wireless NIC',
+        choice2: 'Wired NIC',
+        choice3: 'USB NIC',
+        choice4: 'Fiber optics NIC',
+        answer: 3
+    },
+    {
+        question: 'What is the purpose of the MAC address assigned to a NIC?',
+        choice1: 'To determine the speed rating of the NIC',
+        choice2: 'To provide data transmission control',
+        choice3: 'To deliver Ethernet packets to the computer',
+        choice4: 'To notify the user when data transmission occurs',
+        answer: 3
+    },
+    {
+        question: 'When setting up a static IP address on Windows 10, what is the purpose of this configuration?',
+        choice1: 'To establish a dedicated, full-time connection to a network',
+        choice2: 'To enable communication between a computer and other devices',
+        choice3: 'To assign a unique, unchangeable media access control address',
+        choice4: 'To specify a fixed IP address for the computer on the network',
+        answer: 4
+    },
+    {
+        question: 'How does a router contribute to network configuration?',
+        choice1: 'By providing data transmission control between devices',
+        choice2: 'By implementing physical layer circuitry for communication',
+        choice3: 'By connecting computers to a network with an Ethernet cable',
+        choice4: 'By enabling communication between a computer and other devices on the network',
+        answer: 4
+    },
+    {
+        question: 'What is the main function of a router?',
+        choice1: 'Connects printers to the network',
+        choice2: 'Connects a local network to the internet and routes data between different networks based on their IP addresses',
+        choice3: 'Provides security for network devices',
+        choice4: 'Controls the speed of internet connection',
+        answer: 2
+    },
+    {
+        question: 'How does a router determine where to send data packets?',
+        choice1: 'By inspecting the color of the data packets',
+        choice2: 'By checking the destination MAC address',
+        choice3: 'By inspecting the IP address of incoming data packets',
+        choice4: 'By analyzing the data payload of the packets',
+        answer: 3
+    },
+    {
+        question: 'What is the purpose of resetting a router?',
+        choice1: 'To upgrade its firmware',
+        choice2: 'To restore it to its default settings and clear any previous configurations',
+        choice3: 'To increase its speed',
+        choice4: 'To block unwanted devices from accessing the network',
+        answer: 2
+    },
+    {
+        question: 'What type of cable is typically used to connect a computer to a router?',
+        choice1: 'Coaxial cable',
+        choice2: 'Fiber optic cable',
+        choice3: 'RJ45 cable (UTP cable)',
+        choice4: 'HDMI cable',
+        answer: 3
+    },
+    {
+        question: 'What step follows after plugging in the LAN cable from the router to the internet service provider port?',
+        choice1: 'Turn off the router',
+        choice2: 'Configure the router',
+        choice3: 'Install antivirus software',
+        choice4: 'Connect a printer to the router',
+        answer: 2
+    },
+    {
+        question: 'What is the purpose of inspecting and testing configured computer networks?',
+        choice1: 'To install new software',
+        choice2: 'To identify and resolve network issues',
+        choice3: 'To upgrade hardware components',
+        choice4: 'To clean the computer\'s casing',
+        answer: 2
+    },
+    {
+        question: 'What are some common tools used for inspecting and testing computer networks?',
+        choice1: 'Screwdriver and hammer',
+        choice2: 'Antivirus software',
+        choice3: 'Ping and traceroute commands',
+        choice4: 'Paintbrush and ruler',
+        answer: 3
+    },
+    {
+        question: 'What does the "ping" command do?',
+        choice1: 'Measures the speed of internet connection',
+        choice2: 'Sends packets of data to a specific network device and measures the response time',
+        choice3: 'Checks for software updates',
+        choice4: 'Cleans temporary files from the computer',
+        answer: 2
+    },
+    {
+        question: 'How can traceroute be helpful in network troubleshooting?',
+        choice1: 'By displaying a map of nearby network devices',
+        choice2: 'By identifying the physical location of a network server',
+        choice3: 'By showing the path that data takes from the local computer to a specified destination',
+        choice4: 'By blocking unwanted network traffic',
+        answer: 3
+    }   
         
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 18
+const MAX_QUESTIONS = 25
 
 startGame = () => {
     questionCounter = 0
@@ -173,7 +221,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('end.html')
+        return window.location.assign('end2.html')
     }
 
     questionCounter++
@@ -219,7 +267,7 @@ choiceContainers.forEach(choiceContainer => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 4000);
+        }, 1000);
     });
 });
 
