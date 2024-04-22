@@ -3,7 +3,7 @@ let lastScrollTop = 0; // Initialize variable to store last scroll position
 window.addEventListener("scroll", function() { // Listen for scroll events
 let currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
 if (currentScroll > lastScrollTop) { // If scrolled down
-    document.querySelector("header").style.top = "-90px"; // Hide the header by moving it up
+    document.querySelector("header").style.top = "-120px"; // Hide the header by moving it up
 } else { // If scrolled up
     document.querySelector("header").style.top = "0"; // Show the header by moving it back to its original position
 }
